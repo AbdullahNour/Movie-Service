@@ -1,0 +1,156 @@
+
+*
+{
+    padding:0;
+    margin: 0;
+}
+
+body
+{
+    background-color: #000000f2;
+    position: relative;
+
+}
+
+
+.post
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.layer
+{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:100%;
+    left:0;
+    text-align: center;
+    background-color: rgba(255,255,255,.7);
+    box-sizing: border-box;
+    box-shadow: 15px  gray;
+    font-weight: 800;
+    transition: 1s all;
+    overflow: auto;
+}
+.layer h2
+{
+    margin-bottom: .5rem;
+}
+.layer p
+{
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+.post:hover .layer
+{
+    top:0;
+    transition: all 1s;
+}
+.mine
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    text-align: center;
+}
+
+
+.strip-header-nav
+{
+    background-color: #f8f6f6;
+    position: fixed;
+    width:60px;
+    height:100%;
+    top:0;
+    left:0;
+    text-align: center;
+    z-index: 55555;
+}
+.strip-header-nav i
+{
+    font-size:1.6rem;
+    cursor: pointer;
+}
+.strip-logo
+{
+    padding:25px 0;
+}
+.strip-logo img
+{
+    width:30px;
+}
+.strip-menu
+{
+    position: absolute;
+    top:48%;
+    left:30%;
+    z-index: 555;
+}
+.strip-menu #close
+{
+    position: absolute;
+    left:20%;
+    opacity: 0;
+}
+.strip-social
+{
+    position: absolute;
+    bottom:20px;
+    left:20%;
+}
+.strip-social i
+{
+    font-size:1rem;
+    padding:10px;
+}
+.nav-tap-menu
+{
+    position: fixed;
+    width:240px;
+    height:100%;
+    top:0;
+    left:-240px;
+    z-index: 5555;
+    background-color: #000; 
+}
+
+.menu-item a
+{
+    display: block;
+    text-decoration: none;
+    color:#f9f6f6;
+   font-weight:500;
+   font-size: 1rem;
+   text-align: center;
+   padding-top: 500px;
+   opacity:0;
+   background-color: transparent;
+}
+.menu-item a:hover
+{
+    color:#e83e8c;
+}
+.nav-social-item
+{
+    position: absolute;
+    bottom:50px;
+    left:20px;
+    color:#f9f6f6;
+}
+.nav-social-item i
+{
+    padding: 10px;
+    font-size:.8rem;
+}
+.nav-social-item span
+{
+    color:#999;
+}
+
+
+#contact .alert
+{
+    display: none;
+}
